@@ -3,18 +3,18 @@ import { Table } from "semantic-ui-react"
 import Song from "./Song";
 
 class MusicList extends React.Component {
-  renderSongs = ()=>{
-    return this.props.songs.map((song)=>{
+  renderSongs = () => {
+    return this.props.songs.map((song) => {
       return <Song key={song.id} {...song} />
     })
   }
 
-  render (){
+  render() {
     return (
       <Table celled>
         <Table.Header>
           <Table.Row>
-            <Table.HeaderCell>Song</Table.HeaderCell>
+            <Table.HeaderCell>Song Name</Table.HeaderCell>
             <Table.HeaderCell>Artist</Table.HeaderCell>
           </Table.Row>
         </Table.Header>

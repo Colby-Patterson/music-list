@@ -3,7 +3,7 @@ import { Table } from "semantic-ui-react"
 
 class Song extends React.Component {
 
-  render(){
+  render() {
     return (
       <Table.Row>
         <Table.Cell>{this.props.song}</Table.Cell>
